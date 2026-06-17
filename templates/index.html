@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-
     <meta charset="UTF-8">
+    <title>Flask on Vercel</title>
 
-    <title>
-        Flask Vercel Website
-    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background: #f5f5f5;
+        }
 
+        .container {
+            background: white;
+            padding: 40px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+        }
 
-    <link 
-    rel="stylesheet"
-    href="/static/style.css">
+        h1 {
+            color: #333;
+        }
 
+        p {
+            color: #666;
+        }
 
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #0070f3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0059c9;
+        }
+    </style>
 </head>
-
-
 <body>
-
-
     <div class="container">
+        <h1>🚀 Flask + Vercel 배포 성공</h1>
 
+        <p>GitHub와 Vercel을 이용한 첫 번째 웹사이트입니다.</p>
 
-        <h1>
-            Flask + Vercel 🚀
-        </h1>
-
-
-        <p>
-            Github를 이용한 웹사이트 배포 테스트
-        </p>
-
-
-        <button>
-            Hello
+        <button onclick="alert('Hello Flask!')">
+            클릭하기
         </button>
-
-
     </div>
-
-
 </body>
-
 </html>
