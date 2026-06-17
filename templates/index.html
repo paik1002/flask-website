@@ -5,10 +5,7 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<title>NAVER 스타일 메인</title>
+<title>NAVER</title>
 
 
 <style>
@@ -18,31 +15,22 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, "Noto Sans KR", sans-serif;
+    font-family:Arial, "Noto Sans KR", sans-serif;
 }
+
 
 
 body{
 
     background:white;
 
-    color:#222;
-
 }
 
 
-/* 상단 메뉴 */
 
-header{
+/* 상단 */
 
-    width:100%;
-
-    border-bottom:1px solid #eee;
-
-}
-
-
-.top-menu{
+.top{
 
     width:1200px;
 
@@ -54,7 +42,7 @@ header{
 
     gap:20px;
 
-    padding:15px 0;
+    padding:20px 0;
 
     font-size:13px;
 
@@ -64,33 +52,21 @@ header{
 
 
 
-/* 로고 영역 */
-
-.logo-area{
-
-
-    width:1200px;
-
-    margin:60px auto 30px;
-
-    text-align:center;
-
-
-}
-
-
+/* 로고 */
 
 .logo{
 
+    margin-top:120px;
 
-    font-size:70px;
+    text-align:center;
 
-    font-weight:bold;
+    font-size:80px;
+
+    font-weight:900;
 
     color:#03c75a;
 
-    letter-spacing:-5px;
-
+    letter-spacing:-8px;
 
 }
 
@@ -98,23 +74,28 @@ header{
 
 /* 검색창 */
 
-
-.search-box{
+.search{
 
 
     width:700px;
 
-    height:60px;
+    height:65px;
+
+
+    margin:40px auto;
+
 
     border:2px solid #03c75a;
 
-    border-radius:30px;
 
-    margin:auto;
+    border-radius:35px;
+
 
     display:flex;
 
+
     align-items:center;
+
 
     padding:0 25px;
 
@@ -123,14 +104,14 @@ header{
 
 
 
-.search-box input{
+.search input{
 
-
-    width:100%;
 
     border:none;
 
     outline:none;
+
+    width:100%;
 
     font-size:20px;
 
@@ -139,8 +120,7 @@ header{
 
 
 
-.search-btn{
-
+.icon{
 
     font-size:25px;
 
@@ -150,20 +130,89 @@ header{
 
 
 
-/* 컨텐츠 */
+/* 메뉴 */
+
+.menu{
 
 
-.container{
+    width:800px;
+
+
+    margin:30px auto;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+}
+
+
+
+.menu div{
+
+
+    text-align:center;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+.circle{
+
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+
+    background:#f1f1f1;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    margin:auto;
+
+
+    margin-bottom:10px;
+
+
+    font-size:25px;
+
+
+}
+
+
+
+/* 메인 영역 */
+
+.main{
 
 
     width:1200px;
+
 
     margin:60px auto;
 
 
     display:grid;
 
+
     grid-template-columns: 2fr 1fr;
+
 
     gap:30px;
 
@@ -172,12 +221,14 @@ header{
 
 
 
-.card{
+.box{
 
 
     border:1px solid #ddd;
 
-    border-radius:15px;
+
+    border-radius:12px;
+
 
     padding:25px;
 
@@ -186,10 +237,12 @@ header{
 
 
 
-.card h2{
+.title{
 
 
     font-size:22px;
+
+    font-weight:bold;
 
     margin-bottom:20px;
 
@@ -198,6 +251,7 @@ header{
 
 
 
+/* 뉴스 */
 
 .news{
 
@@ -213,31 +267,23 @@ header{
 
 
 
-.news-item{
+.news p{
+
+
+    background:#f8f8f8;
 
 
     padding:15px;
 
-    background:#f8f8f8;
 
-    border-radius:10px;
-
-
-}
-
-
-
-/* 오른쪽 로그인 */
-
-
-.login{
-
-
-    text-align:center;
+    border-radius:8px;
 
 
 }
 
+
+
+/* 로그인 */
 
 
 .login button{
@@ -245,19 +291,26 @@ header{
 
     width:100%;
 
-    padding:15px;
 
     margin-top:20px;
 
+
+    padding:15px;
+
+
     border:none;
 
-    border-radius:8px;
 
     background:#03c75a;
 
+
     color:white;
 
-    font-size:17px;
+
+    border-radius:8px;
+
+
+    font-size:16px;
 
 
 }
@@ -266,22 +319,26 @@ header{
 
 /* 하단 */
 
+
 footer{
 
 
     margin-top:100px;
 
+
     background:#fafafa;
+
+
+    text-align:center;
+
 
     padding:40px;
 
-    text-align:center;
 
     color:#777;
 
 
 }
-
 
 
 </style>
@@ -295,10 +352,8 @@ footer{
 
 
 
-<header>
 
-
-<div class="top-menu">
+<div class="top">
 
 
 <span>메일</span>
@@ -315,13 +370,7 @@ footer{
 </div>
 
 
-</header>
 
-
-
-
-
-<section class="logo-area">
 
 
 <div class="logo">
@@ -331,13 +380,16 @@ NAVER
 </div>
 
 
-<div class="search-box">
 
 
-<input type="text" placeholder="검색어를 입력하세요">
+
+<div class="search">
 
 
-<div class="search-btn">
+<input placeholder="검색어를 입력하세요">
+
+
+<div class="icon">
 
 🔍
 
@@ -348,79 +400,138 @@ NAVER
 
 
 
-</section>
 
 
+<div class="menu">
 
 
+<div>
 
-
-<section class="container">
-
-
-
-<div class="card">
-
-
-<h2>
+<div class="circle">📰</div>
 
 뉴스
 
-</h2>
+</div>
 
+
+<div>
+
+<div class="circle">🛒</div>
+
+쇼핑
+
+</div>
+
+
+
+<div>
+
+<div class="circle">📍</div>
+
+지도
+
+</div>
+
+
+
+<div>
+
+<div class="circle">🎬</div>
+
+영상
+
+</div>
+
+
+
+<div>
+
+<div class="circle">☁</div>
+
+클라우드
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="main">
+
+
+
+<div class="box">
+
+
+<div class="title">
+
+뉴스
+
+</div>
 
 
 <div class="news">
 
 
-<div class="news-item">
+<p>
 
-오늘의 주요 뉴스입니다.
+2026 새로운 기술 뉴스
 
-</div>
-
-
-<div class="news-item">
-
-새로운 기술과 서비스 소식
-
-</div>
-
-
-<div class="news-item">
-
-세계 최신 트렌드 업데이트
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<div class="card login">
-
-
-<h2>
-
-로그인
-
-</h2>
-
+</p>
 
 
 <p>
 
-네이버 스타일 메인페이지
+AI와 웹 개발 트렌드
 
 </p>
 
+
+<p>
+
+오늘의 인기 콘텐츠
+
+</p>
+
+
+<p>
+
+세계 주요 소식
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="box login">
+
+
+<div class="title">
+
+로그인
+
+</div>
+
+
+<p>
+
+네이버 서비스를 이용하려면 로그인하세요.
+
+</p>
 
 
 <button>
@@ -434,77 +545,88 @@ NAVER
 
 
 
-</section>
+
+</div>
 
 
 
 
 
 
-<section class="container">
+<div class="main">
 
 
-<div class="card">
+<div class="box">
 
 
-<h2>
+<div class="title">
 
 인기 검색어
 
-</h2>
+</div>
 
 
 <p>
 
-🔥 AI
+🔥 인공지능
 
 </p>
+
+<br>
+
 
 <p>
 
-🔥 여행
+🔥 월드컵 2026
 
 </p>
+
+<br>
+
 
 <p>
 
-🔥 스포츠
+🔥 개발 공부
 
 </p>
+
 
 
 </div>
 
 
 
-<div class="card">
+<div class="box">
 
 
-<h2>
+<div class="title">
 
 서비스
 
-</h2>
+</div>
 
 
 <p>
 
 메일</p>
 
+<br>
+
 <p>
 
 지도</p>
+
+<br>
 
 <p>
 
 쇼핑</p>
 
 
-
 </div>
 
 
-</section>
+</div>
 
 
 
@@ -514,21 +636,11 @@ NAVER
 <footer>
 
 
-<p>
-
 Flask + Vercel Website
-
-</p>
-
-
-<p>
-
-Copyright © 2026
-
-</p>
 
 
 </footer>
+
 
 
 
